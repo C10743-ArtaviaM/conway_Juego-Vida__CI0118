@@ -16,3 +16,4 @@ main     # Binario final (si fue compilado en el directorio raíz)
 
 # Codigos de Prueba
 main_notMain.asm
+*.txt
