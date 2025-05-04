@@ -1,0 +1,18 @@
+# Ignorar todos los archivos generados por la compilación
+/build/
+
+# Si alguna vez compilas en el directorio raíz (por error o en versiones anteriores), ignora también ejecutables y objetos aquí:
+*.o      # Archivos objeto intermedios
+game     # Binario final (si fue compilado en el directorio raíz)
+
+# Archivos de respaldo creados por editores de texto
+*~       # Archivos de respaldo comunes (ej. main.asm~)
+*.swp    # Archivos de intercambio de Vim
+*.bak    # Archivos de respaldo con extensión .bak
+
+# Ignorar resultados de pruebas temporales o logs, si los llegaras a generar
+*.log
+*.tmp
+
+# Codigos de Prueba
+main_notMain.asm
