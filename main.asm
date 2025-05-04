@@ -54,7 +54,7 @@ str2int:
                              ; carácter.
     sub al, '0'              ; Convertir el carácter ASCII a su valor numérico.
     imul ecx, ecx, 10        ; Multiplicar el valor actual por 10 (shift a la
-                             : izquierda por 1 dígito).
+                             ; izquierda por 1 dígito).
     add ecx, eax             ; Agregar el valor del carácter al total.
     jmp .nextchar            ; Volver a leer el siguiente carácter.
 
