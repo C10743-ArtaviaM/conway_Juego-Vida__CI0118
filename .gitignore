@@ -3,7 +3,7 @@
 
 # Si alguna vez compilas en el directorio raíz (por error o en versiones anteriores), ignora también ejecutables y objetos aquí:
 *.o      # Archivos objeto intermedios
-game     # Binario final (si fue compilado en el directorio raíz)
+main     # Binario final (si fue compilado en el directorio raíz)
 
 # Archivos de respaldo creados por editores de texto
 *~       # Archivos de respaldo comunes (ej. main.asm~)
