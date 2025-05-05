@@ -39,7 +39,7 @@
 
 ## 👥 Integrantes
 - Mauricio Artavia Monge
-- Joaquin Donzon
+- Joaquin Donzon Avendano
 
 ---
 
@@ -47,6 +47,7 @@
 
 1. Compilar y ejecutar:
    ```bash
+   make clean
    make run
    ```
 2. Ingresar el tamaño del tablero (mínimo 5, máximo 20).
@@ -83,6 +84,7 @@ Esta implementación del [Juego de la Vida](https://es.wikipedia.org/wiki/Juego_
 ├── game.asm          # Código principal en NASM
 ├── Makefile          # Script de compilación y ejecución
 ├── README.md         # Este archivo
+├── .gitignore        # Manejo exclusion de archivos.
 └── ...               # Otros posibles archivos auxiliares
 ```
 
@@ -90,9 +92,17 @@ Esta implementación del [Juego de la Vida](https://es.wikipedia.org/wiki/Juego_
 
 ## 💡 Consideraciones
 
-- Este proyecto fue realizado completamente por los autores, sin el uso de herramientas de Inteligencia Artificial.
-- El código puede expandirse fácilmente para agregar nuevas reglas o patrones iniciales más complejos.
 - Se recomienda ejecutar el programa desde una terminal que soporte ANSI para una mejor visualización del tablero.
+
+---
+
+## ✅ Resultados
+
+Los resultados se despliegan al usuario a traves de la consola. Esto incluye:
+
+- Visualizacion del grid.
+- Indicaciones sobre como proceder.
+- Mensajes relevantes que orienten al usuario.
 
 ---
 
