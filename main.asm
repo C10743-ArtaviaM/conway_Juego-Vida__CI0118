@@ -2,9 +2,9 @@
 ; Juego de la Vida
 ; Tarea Programada 1 - Lenguaje Ensamblador
 ; ============================================================================
-; Este programa nos inicializa un grid de tamaño n x n y mostrará un patrón 
+; Este programa inicializa un grid de tamaño n x n y muestra un patrón 
 ; simple. Se implementan las funciones para inicializar el grid, mostrarlo 
-; en consola, y permitir la entrada de un tamaño de grid por parte del usuario.
+; en consola, y permitir la entrada del tamaño del grid por parte del usuario.
 ; ============================================================================
  
 section .data
@@ -205,8 +205,27 @@ clear_grid:
     ; Inicializar el patrón (glider).
     call init_pattern            ; Llamar a la función para colocar el patrón.
 
-    ; Mostrar el grid en consola.
-    call show_grid               ; Llamar a la función para mostrar el grid.
+    ; Asegurar que grid_size sea al menos 1
+    cmp byte [grid_size], 1
+    jb set_min_loop
+    jmp continue_loop
+set_min_loop:
+    mov byte [grid_size], 1
+continue_loop:
+    ; Mostrar el grid en consola grid_size veces
+    movzx edi, byte [grid_size]  ; Obtener cuántas veces mostrar (n veces)
+
+show_loop:
+    call show_grid               ; Mostrar el grid
+    ; Imprimir salto de línea entre repeticiones (para claridad)
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, newline
+    mov edx, 1
+    int 0x80
+
+    dec edi
+    jnz show_loop               ; Disminuir ECX y repetir si no es cero
 
     ; Salir del programa.
     mov eax, 1                   ; sys_exit: llamada al sistema para terminar el
