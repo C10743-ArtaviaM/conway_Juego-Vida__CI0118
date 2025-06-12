@@ -66,13 +66,13 @@ int main()
 
     Button btnPause
     (
-        sf::Vector2f(100, 30), sf::Vector2f(10, 10), "⏸️ Pausa", font, 
+        sf::Vector2f(100, 30), sf::Vector2f(10, 10), "Pausa", font, 
         sf::Color(70, 70, 70), [&paused]() { paused = !paused; }
     );
 
     Button btnStep
     (
-        sf::Vector2f(100, 30), sf::Vector2f(120, 10), "⚡ Paso", font,
+        sf::Vector2f(100, 30), sf::Vector2f(120, 10), "Paso", font,
         sf::Color(70, 70, 70), [&stepOnce, &paused]() 
         { 
             stepOnce = true; 
