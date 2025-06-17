@@ -111,7 +111,10 @@ Los resultados se despliegan al usuario a traves de la consola. Esto incluye:
 Este trabajo fue realizado como parte de la primera tarea programada y cumple con los requisitos básicos de entrada, visualización y comportamiento del juego. Las optimizaciones y mejoras visuales están en desarrollo para versiones futuras.
 
 ---
+## Referencias
 
+Mesos Aurum. (2025, enero 16). *SFML 3.0 Tutorial 4: Conway's Game Of Life and Image* [Video]. YouTube. https://www.youtube.com/watch?v=I4Aawnw_Bzc
+---
 <div align="center">
   <img src="https://media.giphy.com/media/f9k1tV7HyORcngKF8v/giphy.gif" width="400"/>
 </div>
